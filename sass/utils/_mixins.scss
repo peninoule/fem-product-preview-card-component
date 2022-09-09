@@ -1,0 +1,20 @@
+@use './variables' as v;
+
+@mixin padding-primary {
+    padding: 0 0 1.5rem 0;
+}
+
+@mixin text-primary {
+    font-family: v.$ff-primary;
+    font-size: v.$fs-primary;
+    font-weight: v.$fw-700;
+}
+
+@mixin text-secondary {
+    @include padding-primary;
+    font-family: v.$ff-secondary;
+    font-size:  v.$fs-secondary;
+    font-weight: v.$fw-500;
+    color: v.$clr-neutral-500;
+    line-height: 1.5;
+}

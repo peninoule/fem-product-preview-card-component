@@ -1,0 +1,56 @@
+@use '../utils/' as u;
+
+.card-grid {
+    max-width: 35ch;
+    padding: 1.5rem;
+    @media (max-width: 40em) {
+        max-width: 43ch;
+    }
+    &__title {
+        @include u.text-secondary;
+        letter-spacing: 5px;
+        @media (max-width: 40em) {
+            padding-bottom: 1rem;
+        }
+    }
+    &__heading {
+        @include u.text-primary;
+        @include u.padding-primary;
+        color: u.$clr-neutral-900;
+    }
+    &__byline  {
+        @include u.text-secondary;
+    }
+    &__price {
+        @include u.text-primary;
+        padding: 0 1rem 1rem 0;
+        display: flex;
+        &--active {
+            color: u.$clr-primary-400;
+        }
+        &--disabled {
+            margin-left: 1rem;
+            align-self: center;
+            color: u.$clr-neutral-500;
+            font-size: u.$fs-secondary;
+            text-decoration: line-through u.$clr-neutral-500;
+        }
+    }
+    &__btn {
+        font-family: u.$ff-secondary;
+        background-color: u.$clr-primary-400;
+        color: u.$clr-neutral-100;
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+        padding: 1rem;
+        &:hover {
+            cursor: pointer;
+            background-color: darken(u.$clr-primary-400, 20%);
+        }
+        &--icon {
+            display: inline-block;
+            margin-right: .5rem;
+        }
+    }
+}
