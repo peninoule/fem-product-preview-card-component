@@ -12,12 +12,12 @@
         grid-auto-rows: 1fr 1.55fr;
         }
     &__image {
-        background-image: url(../../images/image-product-desktop.jpg);
+        background-image: url(../../public/image-product-desktop.jpg);
         background-size: cover;
         border-top-left-radius: 5%;
         border-bottom-left-radius: 5%;
         @media (max-width: 40em) {
-            background-image: url(../../images/image-product-mobile.jpg);
+            background-image: url(../../public/image-product-mobile.jpg);
             border-bottom-left-radius: 0%;
             border-top-right-radius: 5%;
         }
