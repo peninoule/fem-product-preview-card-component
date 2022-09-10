@@ -63,8 +63,9 @@ svg {
   }
 }
 body {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: hsl(30deg, 38%, 92%);
   line-height: 1;
 }
@@ -150,7 +151,7 @@ body {
   align-self: center;
   color: hsl(228deg, 12%, 48%);
   font-size: 14px;
-  text-decoration: line-through hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
 }
 .card-grid__btn {
   font-family: "Montserrat", sans-serif;
